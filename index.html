@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <!-- LEFT SIDE -->
+
+            <div class="left">
+
+                <div class="logo">
+                    EduPortal
+                </div>
+
+                <h1>
+                    Student Registration System
+                </h1>
+
+                <p>
+                    Advanced multi-step student registration portal
+                    using only HTML, CSS and JavaScript.
+                </p>
+
+                <div class="feature-box">
+
+                    <div class="feature">
+                        🎓 Student Management
+                    </div>
+
+                    <div class="feature">
+                        📚 Academic Registration
+                    </div>
+
+                    <div class="feature">
+                        🔒 Secure Information
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="right">
+
+                <!-- PROGRESS -->
+
+                <div class="top-progress">
+
+                    <div class="step active">
+                        1
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="step">
+                        2
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="step">
+                        3
+                    </div>
+
+                </div>
+
+                <h2 class="form-title">
+                    Basic Student Information
+                </h2>
+
+                <p class="form-subtitle">
+                    Fill basic details to continue registration.
+                </p>
+
+                <form id="step1Form">
+
+                    <div class="input-group">
+
+                        <input type="text" id="firstName" required>
+
+                        <label>
+                            First Name
+                        </label>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <input type="text" id="lastName" required>
+
+                        <label>
+                            Last Name
+                        </label>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <input type="email" id="email" required>
+
+                        <label>
+                            Email Address
+                        </label>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <input type="tel" id="phone" required>
+
+                        <label>
+                            Mobile Number
+                        </label>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <select id="course" required>
+
+                            <option value="">
+                                Select Course
+                            </option>
+
+                            <option>BCA</option>
+                            <option>B.Tech</option>
+                            <option>BBA</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <select id="department" required>
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option>Computer Science</option>
+                            <option>Management</option>
+                            <option>Engineering</option>
+                            <option>Commerce</option>
+
+                        </select>
+
+                    </div>
+
+                    <button type="submit">
+
+                        Continue →
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<div id="particles-js"></div>
+
+</body>
+
+</html>

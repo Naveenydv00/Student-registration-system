@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="left">
+
+                <div class="logo">
+                    EduPortal
+                </div>
+
+                <h1>
+                    Personal Details
+                </h1>
+
+                <p>
+                    Fill complete student information carefully before proceeding.
+                </p>
+
+            </div>
+
+            <div class="right">
+
+                <div class="top-progress">
+
+                    <div class="step done">✓</div>
+
+                    <div class="line active"></div>
+
+                    <div class="step active">2</div>
+
+                    <div class="line"></div>
+
+                    <div class="step">3</div>
+
+                </div>
+
+                <h2 class="form-title">
+                    Student Information
+                </h2>
+
+                <form id="detailsForm">
+
+                    <div class="input-group">
+                        <input type="text" id="fatherName" required>
+                        <label>Father Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="motherName" required>
+                        <label>Mother Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="date" id="dob" required>
+                    </div>
+
+                    <div class="input-group">
+                        <select id="gender" required>
+                            <option value="">Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" id="studentMobile" required>
+                        <label>Student Mobile Number</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" id="parentMobile" required>
+                        <label>Parents Mobile Number</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="city" required>
+                        <label>City</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="state" required>
+                        <label>State</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="abcId" required>
+                        <label>ABC ID</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="aadhar" required>
+                        <label>Aadhar Number</label>
+                    </div>
+
+                    <div class="input-group">
+                        <select id="bloodGroup" required>
+                            <option value="">Blood Group</option>
+                            <option>A+</option>
+                            <option>B+</option>
+                            <option>AB+</option>
+                            <option>O+</option>
+                            <option>A-</option>
+                            <option>B-</option>
+                            <option>AB-</option>
+                            <option>O-</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="nationality" required>
+                        <label>Nationality</label>
+                    </div>
+
+                    <div class="input-group full">
+                        <textarea id="address" required></textarea>
+                        <label>Full Address</label>
+                    </div>
+
+                    <!-- PHOTO -->
+
+                    <label class="upload">
+
+                        <input type="file" id="photoUpload" accept="image/*">
+
+                        <h3>📷 Upload Passport Size Photo</h3>
+
+                        <div class="preview" id="photoPreview"></div>
+
+                    </label>
+
+                    <!-- SIGN -->
+
+                    <label class="upload">
+
+                        <input type="file" id="signUpload" accept="image/*">
+
+                        <h3>✍ Upload Student Signature</h3>
+
+                        <div class="preview" id="signPreview"></div>
+
+                    </label>
+
+                    <button type="submit">
+                        Review Information →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="details.js"></script>
+
+</body>
+
+</html>
